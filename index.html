@@ -52,7 +52,7 @@
     <main>
         <section class="hero hero-bg-img">
             <h1 class="hero-h">Эффективные решения<br /> для вашего бизнеса</h1>
-            <button class="hero-button" type="button">Заказать услугу</button>
+            <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
         </section>
         
         <!--Значимость-->
@@ -402,9 +402,9 @@
     </footer>
     
     <!-- =============Модальное окно============ -->
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
         <div class="modal">
-            <button type="button" class="closes-btn">
+            <button type="button" class="closes-btn" data-modal-close>
                 <svg class="close-cross" width="11px" height="11px">
                     <use href="./images/sprite-opt.svg#icon-cross"></use>
                 </svg>
@@ -412,6 +412,7 @@
         </div>
     </div>
 
-    
+
+<script src="./js/modal.js"></script>
 </body>
 </html>
