@@ -139,8 +139,21 @@ body {
   padding-bottom: 32px; */
 }
 .navigation-items-li {
+  position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+.line-position::after{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  margin-top: 28px;
+  width: 100%;
+  height: 4px;
+  background: var(--accent-color);
+  border-radius: 2px;
 }
 .navigation-items .navigation-items-li:not(:last-child) {
   margin-right: 50px;
@@ -157,6 +170,8 @@ body {
 
   padding-bottom: 32px;
   padding-top: 32px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-in,
 .navigation .link:hover,
@@ -192,6 +207,8 @@ body {
 
   padding-top: 32px;
   padding-bottom: 32px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-head-mail {
@@ -199,6 +216,7 @@ body {
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
+  
 }
 
 .icon-head-tel {
@@ -206,6 +224,7 @@ body {
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
+ 
 }
 /* hero */
 .hero {
@@ -316,11 +335,11 @@ body {
   line-height: 1.71;
 }
 
-/* workspace */
-.workspace {
+/* workspase */
+.workspase {
   padding-bottom: 94px;
 }
-.workspace-h {
+.workspase-h {
   margin-bottom: 50px;
 
   font-weight: var(--bold-weight);
@@ -328,14 +347,37 @@ body {
   line-height: 1.16;
   text-align: center;
 }
-.workspace-posters {
+.workspase-posters-ul {
   display: flex;
   flex-wrap: wrap;
 }
-.workspace-posters-list {
+.workspase-posters-list {
   margin-right: 30px;
 }
-.workspace-posters .workspace-posters-list:nth-child(3n) {
+.workspase-posters {
+  position: relative;
+}
+.poster-text {
+position: absolute;
+width: 370px;
+height: 70px;
+left: 0;
+bottom: 0;
+padding-top: 27px;
+padding-bottom: 27px;
+padding-left: 15px;
+padding-right: 15px;
+
+
+font-weight: var(--bold-weight);
+line-height: 1.14;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+background: rgba(47, 48, 58, 0.8);
+}
+
+.workspase-posters-ul .workspase-posters-list:nth-child(3n) {
   margin-right: 0px;
 }
 
@@ -404,6 +446,8 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover,
@@ -480,6 +524,9 @@ body {
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:focus,
@@ -586,6 +633,9 @@ body {
   padding-right: 22px;
   padding-top: 6px;
   padding-bottom: 6px;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters-box .filters-items:not(:last-child) {
   margin-right: 8px;
@@ -616,6 +666,9 @@ body {
 .examples-link {
   display: block;
   text-decoration: none;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .block {
   display: inline-block;
