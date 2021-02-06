@@ -170,6 +170,8 @@ body {
 
   padding-bottom: 32px;
   padding-top: 32px;
+
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -207,6 +209,8 @@ body {
 
   padding-top: 32px;
   padding-bottom: 32px;
+
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -288,7 +292,7 @@ body {
   text-align: center;
 }
 
-/* характеристика команды */
+/* ============================характеристика команды =======================================*/
 
 .specifications-allimg {
   display: flex;
@@ -335,7 +339,7 @@ body {
   line-height: 1.71;
 }
 
-/* workspase */
+/* ==================================workspase=================================== */
 .workspase {
   padding-bottom: 94px;
 }
@@ -381,7 +385,7 @@ background: rgba(47, 48, 58, 0.8);
   margin-right: 0px;
 }
 
-/* наша команда */
+/* ========================================наша команда===================================== */
 .ourcomand-items {
   display: flex;
   flex-wrap: wrap;
@@ -446,6 +450,8 @@ background: rgba(47, 48, 58, 0.8);
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -463,9 +469,13 @@ background: rgba(47, 48, 58, 0.8);
   width: 20px;
   height: 20px;
   fill: var(--main-color-socicon);
+  
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Наши клиенты */
+/*======================================= Наши клиенты======================== */
 
 .client {
   padding-top: 94px;
@@ -513,7 +523,10 @@ background: rgba(47, 48, 58, 0.8);
   height: 46px;
 }
 .all-company-icon {
-  fill: var(--main-color-socicon);;
+  fill: var(--main-color-socicon);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link {
@@ -525,6 +538,7 @@ background: rgba(47, 48, 58, 0.8);
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
+  transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -539,7 +553,7 @@ background: rgba(47, 48, 58, 0.8);
   fill: var(--accent-color);
 }
 
-/* footer */
+/* ========================================footer =========================================*/
 .footer-double-box {
   display: flex;
   align-items: baseline;
@@ -609,9 +623,9 @@ background: rgba(47, 48, 58, 0.8);
   fill: var(--white-text);
 }
 
-/* Portfolio */
+/* ============================================Portfolio ========================================*/
 
-/* filters */
+/* ===========================filters=========================== */
 .filters-and-examples {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -634,8 +648,12 @@ background: rgba(47, 48, 58, 0.8);
   padding-top: 6px;
   padding-bottom: 6px;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  transition: 
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .filters-box .filters-items:not(:last-child) {
   margin-right: 8px;
@@ -644,16 +662,20 @@ background: rgba(47, 48, 58, 0.8);
 .filters:hover,
 .filters:focus {
   background-color: var(--accent-color);
+  box-shadow: 
+  0px 3px 1px rgba(0, 0, 0, 0.1), 
+  0px 1px 2px rgba(0, 0, 0, 0.08), 
+  0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--white-text);
   cursor: pointer;
 }
 
-/* Примеры работ */
+/* ========================================Примеры работ ==============================*/
 
 .examples {
   display: flex;
   flex-wrap: wrap;
-  /* margin-top: 34px; */
+  
 }
 .examples .examples-list {
   margin-right: 30px;
